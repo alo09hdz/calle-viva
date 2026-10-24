@@ -2,7 +2,7 @@
 
 Aplicación web progresiva para reportar baches, fallas de alumbrado, fugas y basura con **foto** y **ubicación GPS**. Los reportes se guardan en el dispositivo y se consultan **sin conexión**.
 
-**URL publicada:** _(pega aquí tu URL HTTPS, p. ej. https://calle-viva.netlify.app)_
+**URL publicada:** https://calle-viva-alo09.netlify.app 
 
 ## Caso de uso
 Una persona detecta un problema en la calle, lo documenta en segundos aunque no tenga datos móviles y conserva el historial en su teléfono.
@@ -39,7 +39,16 @@ python3 -m http.server 8080   # o: npx serve .
 (`localhost` cuenta como origen seguro para cámara, GPS y Service Worker.)
 
 ## Despliegue
-Netlify/Vercel/Cloudflare Pages/GitHub Pages: conecta el repositorio, sin comando de build y directorio de publicación `/` (raíz).
+Publicada en **Netlify** con HTTPS, desplegada automáticamente desde la rama `main` de este repositorio.
 
 ## Capturas
-Agrega en `docs/`: instalación, vista offline, DevTools → Application (Manifest, Service Worker, IndexedDB).
+
+
+### Web App Manifest
+![Manifest](docs/manifest.png)
+
+### Service Worker activo
+![Service Worker](docs/service-worker.png)
+
+### Persistencia en IndexedDB
+![IndexedDB](docs/indexeddb.png)
