@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Calle Viva</title>
+  <meta name="theme-color" content="#1f2a30">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- APP SHELL: header + nav + contenedor. El contenido se renderiza en cliente (CSR) -->
+  <header class="top">
+    <h1>Calle Viva</h1>
+    <span id="net" class="net" role="status">En línea</span>
+    <button id="btnInstall" class="btn-install" hidden>Instalar app</button>
+  </header>
+  <main id="view" tabindex="-1" aria-live="polite"></main>
+  <nav class="tabs" aria-label="Secciones">
+    <a href="#/nuevo" data-r="nuevo">Nuevo reporte</a>
+    <a href="#/lista" data-r="lista">Mis reportes <b id="count">0</b></a>
+  </nav>
+  <dialog id="cam">
+    <video id="video" autoplay playsinline muted></video>
+    <div class="row"><button id="snap" class="primary">Capturar</button><button id="closeCam">Cancelar</button></div>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
