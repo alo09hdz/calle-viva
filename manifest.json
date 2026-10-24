@@ -1,0 +1,19 @@
+{
+  "name": "Calle Viva – Reportes ciudadanos",
+  "short_name": "Calle Viva",
+  "description": "Reporta baches y fallas urbanas con foto y ubicación, incluso sin internet.",
+  "id": "/",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "es-MX",
+  "background_color": "#1f2a30",
+  "theme_color": "#1f2a30",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
